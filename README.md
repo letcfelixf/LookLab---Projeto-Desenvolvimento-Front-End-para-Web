@@ -17,7 +17,6 @@ Linguagens Utilizadas
 * HTML5
 * CSS3 
 * JavaScript
-* React
 
 Objetivo
 O principal objetivo do projeto é demonstrar a construção de uma aplicação front-end funcional, com foco em usabilidade, organização visual e manipulação de estado, simulando uma experiência próxima a aplicativos reais de moda.
