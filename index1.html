@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LookLab</title>
+  <link rel="stylesheet" href="design.css">
+<body>
+
+  <header>
+    <h1>Meu Closet Virtual</h1>
+  </header>
+
+  <main>
+
+    <!-- Seção de filtros por categoria -->
+    <section class="filtros">
+      <h2>Categorias</h2>
+      <ul>
+        <li><button>Todas</button></li>
+        <li><button>Camisetas</button></li>
+        <li><button>Calças</button></li>
+        <li><button>Calçados</button></li>
+      </ul>
+    </section>
+
+    <!-- Seção onde o usuário cadastra uma peça nova -->
+    <section class="adicionar-peca">
+      <h2>Adicionar Peça</h2>
+      <form>
+        <label for="nome-peca">Nome da peça</label>
+        <input type="text" id="nome-peca" name="nome-peca" placeholder="Ex: Camiseta branca">
+
+        <label for="imagem-peca">Imagem</label>
+        <input type="file" id="imagem-peca" name="imagem-peca" accept="image/*">
+
+        <label for="categoria-peca">Categoria</label>
+        <select id="categoria-peca" name="categoria-peca">
+          <option value="camiseta">Camiseta</option>
+          <option value="calca">Calça</option>
+          <option value="calcado">Calçado</option>
+        </select>
+
+        <button type="button">Adicionar peça</button>
+      </form>
+    </section>
+
+    <!-- Seção onde as roupas cadastradas pelo usuário vão aparecer, organizadas por categoria -->
+    <section class="catalogo">
+      <h2>Peças</h2>
+
+      <div class="linha-categoria" data-categoria="camiseta">
+        <h3>Camisetas</h3>
+        <div class="itens">
+          <p class="vazio">Nenhuma camiseta adicionada ainda.</p>
+        </div>
+      </div>
+
+      <div class="linha-categoria" data-categoria="calca">
+        <h3>Calças</h3>
+        <div class="itens">
+          <p class="vazio">Nenhuma calça adicionada ainda.</p>
+        </div>
+      </div>
+
+      <div class="linha-categoria" data-categoria="calcado">
+        <h3>Calçados</h3>
+        <div class="itens">
+          <p class="vazio">Nenhum calçado adicionado ainda.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Seção onde o look montado vai aparecer -->
+    <section class="look">
+      <h2>Meu Look</h2>
+      <p>Nenhum item adicionado ainda.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Catálogo de Roupas — projeto de estudo</p>
+  </footer>
+
+</body>
+</html>
